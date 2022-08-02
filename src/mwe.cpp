@@ -26,11 +26,11 @@ int main(int argc, char *argv[])
     // }); });
 
     std::vector<std::complex<float>> cdata(64);
-    const unsigned int dim = 2;
+    const unsigned int dim = 4;
     for (size_t i = 0; i < dim * dim * dim; i++)
     {
         cdata[i] = i;
-        cdata[i].imag(0.0f);
+        cdata[i].imag(1.0f);
     }
 
     myQueue.submit([&](sycl::handler &cgh)
@@ -59,8 +59,8 @@ int main(int argc, char *argv[])
             // int n[] = {(int)4, (int)4, (int)4};
             // cufftPlanMany(&fftPlan, 3, n, NULL, 0, 0, NULL, 0, 0, CUFFT_C2C, 1);
             // cufftPlan2d(&fftPlan, 4, 4, CUFFT_C2C);
-            // cufftPlan3d(&fftPlan, dim, dim, dim, CUFFT_C2C);
-            cufftPlan1d(&fftPlan, dim* dim* dim, CUFFT_C2C, 1);
+            cufftPlan3d(&fftPlan, dim, dim, dim, CUFFT_C2C);
+            // cufftPlan1d(&fftPlan, dim* dim* dim, CUFFT_C2C, 1);
             cufftComplex *data;
 
             for (int i = 0; i < dim; i++)
