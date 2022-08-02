@@ -1,0 +1,3 @@
+/home/boeck/mwe_hipSYCL_cufft/build/CMakeFiles/mwe-hipsycl-fft.dir
+/home/boeck/mwe_hipSYCL_cufft/build/CMakeFiles/edit_cache.dir
+/home/boeck/mwe_hipSYCL_cufft/build/CMakeFiles/rebuild_cache.dir
