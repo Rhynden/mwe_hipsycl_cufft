@@ -18,6 +18,8 @@ find_package(hipSYCL REQUIRED)
 # find_package(CUDA REQUIRED)
 find_package(CUDAToolkit REQUIRED)
 
+message(STATUS "${CMAKE_CUDA_COMPILER_ID} ${CMAKE_CUDA_COMPILER_VERSION}")
+
 add_executable(mwe-hipsycl-fft ${MY_SOURCE_FILES})
 
 # set_target_properties(mwe-hipsycl-fft PROPERTIES
