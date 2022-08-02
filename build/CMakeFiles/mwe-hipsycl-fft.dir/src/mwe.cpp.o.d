@@ -469,7 +469,7 @@ CMakeFiles/mwe-hipsycl-fft.dir/src/mwe.cpp.o: \
   /opt/hipSYCL/bin/../include/hipSYCL/sycl/detail/util.hpp \
   /opt/hipSYCL/bin/../include/SYCL/../hipSYCL/sycl/libkernel/atomic_builtins.hpp \
   /opt/hipSYCL/bin/../include/hipSYCL/sycl/libkernel/detail/builtin_dispatch.hpp \
-  /opt/hipSYCL/bin/../include/SYCL/../hipSYCL/sycl/libkernel/generic/hiplike/atomic_builtins.hpp \
+  /opt/hipSYCL/bin/../include/SYCL/../hipSYCL/sycl/libkernel/host/atomic_builtins.hpp \
   /opt/hipSYCL/bin/../include/SYCL/../hipSYCL/sycl/libkernel/detail/local_memory_allocator.hpp \
   /opt/hipSYCL/bin/../include/SYCL/../hipSYCL/sycl/libkernel/detail/mobile_shared_ptr.hpp \
   /opt/hipSYCL/bin/../include/SYCL/../hipSYCL/sycl/libkernel/nd_item.hpp \
@@ -498,25 +498,20 @@ CMakeFiles/mwe-hipsycl-fft.dir/src/mwe.cpp.o: \
   /opt/hipSYCL/bin/../include/hipSYCL/sycl/libkernel/vec.hpp \
   /opt/hipSYCL/bin/../include/SYCL/../hipSYCL/sycl/libkernel/builtin_interface.hpp \
   /opt/hipSYCL/bin/../include/SYCL/../hipSYCL/sycl/libkernel/detail/builtin_dispatch.hpp \
-  /opt/hipSYCL/bin/../include/SYCL/../hipSYCL/sycl/libkernel/generic/hiplike/builtins.hpp \
+  /opt/hipSYCL/bin/../include/SYCL/../hipSYCL/sycl/libkernel/host/builtins.hpp \
   /opt/hipSYCL/bin/../include/SYCL/../hipSYCL/sycl/libkernel/atomic_ref.hpp \
   /opt/hipSYCL/bin/../include/SYCL/../hipSYCL/sycl/libkernel/stream.hpp \
   /opt/hipSYCL/bin/../include/SYCL/../hipSYCL/sycl/libkernel/group_traits.hpp \
   /opt/hipSYCL/bin/../include/SYCL/../hipSYCL/sycl/libkernel/group_functions.hpp \
-  /opt/hipSYCL/bin/../include/SYCL/../hipSYCL/sycl/libkernel/cuda/group_functions.hpp \
-  /opt/hipSYCL/bin/../include/SYCL/../hipSYCL/sycl/libkernel/cuda/../backend.hpp \
-  /opt/hipSYCL/bin/../include/SYCL/../hipSYCL/sycl/libkernel/cuda/../generic/hiplike/warp_shuffle.hpp \
-  /opt/hipSYCL/bin/../include/SYCL/../hipSYCL/sycl/libkernel/cuda/../id.hpp \
-  /opt/hipSYCL/bin/../include/SYCL/../hipSYCL/sycl/libkernel/cuda/../sub_group.hpp \
-  /opt/hipSYCL/bin/../include/SYCL/../hipSYCL/sycl/libkernel/cuda/../vec.hpp \
-  /opt/hipSYCL/bin/../include/SYCL/../hipSYCL/sycl/libkernel/generic/hiplike/group_functions.hpp \
-  /opt/hipSYCL/bin/../include/SYCL/../hipSYCL/sycl/libkernel/generic/hiplike/../../backend.hpp \
-  /opt/hipSYCL/bin/../include/SYCL/../hipSYCL/sycl/libkernel/generic/hiplike/../../detail/data_layout.hpp \
-  /opt/hipSYCL/bin/../include/SYCL/../hipSYCL/sycl/libkernel/generic/hiplike/../../detail/thread_hierarchy.hpp \
-  /opt/hipSYCL/bin/../include/SYCL/../hipSYCL/sycl/libkernel/generic/hiplike/../../id.hpp \
-  /opt/hipSYCL/bin/../include/SYCL/../hipSYCL/sycl/libkernel/generic/hiplike/../../sub_group.hpp \
-  /opt/hipSYCL/bin/../include/SYCL/../hipSYCL/sycl/libkernel/generic/hiplike/../../vec.hpp \
-  /opt/hipSYCL/bin/../include/SYCL/../hipSYCL/sycl/libkernel/generic/hiplike/warp_shuffle.hpp \
+  /opt/hipSYCL/bin/../include/SYCL/../hipSYCL/sycl/libkernel/host/group_functions.hpp \
+  /opt/hipSYCL/bin/../include/SYCL/../hipSYCL/sycl/libkernel/host/../backend.hpp \
+  /opt/hipSYCL/bin/../include/SYCL/../hipSYCL/sycl/libkernel/host/../detail/data_layout.hpp \
+  /opt/hipSYCL/bin/../include/SYCL/../hipSYCL/sycl/libkernel/host/../detail/mem_fence.hpp \
+  /opt/hipSYCL/bin/../include/SYCL/../hipSYCL/sycl/libkernel/host/../functional.hpp \
+  /opt/hipSYCL/bin/../include/SYCL/../hipSYCL/sycl/libkernel/host/../group.hpp \
+  /opt/hipSYCL/bin/../include/SYCL/../hipSYCL/sycl/libkernel/host/../id.hpp \
+  /opt/hipSYCL/bin/../include/SYCL/../hipSYCL/sycl/libkernel/host/../sub_group.hpp \
+  /opt/hipSYCL/bin/../include/SYCL/../hipSYCL/sycl/libkernel/host/../vec.hpp \
   /opt/hipSYCL/bin/../include/SYCL/../hipSYCL/sycl/libkernel/group_functions_alias.hpp \
   /opt/hipSYCL/bin/../include/SYCL/../hipSYCL/sycl/libkernel/functional.hpp \
   /opt/hipSYCL/bin/../include/SYCL/../hipSYCL/sycl/libkernel/reduction.hpp \
@@ -597,11 +592,295 @@ CMakeFiles/mwe-hipsycl-fft.dir/src/mwe.cpp.o: \
   /opt/hipSYCL/bin/../include/hipSYCL/glue/cuda/../generic/hiplike/hiplike_reducer.hpp \
   /opt/hipSYCL/bin/../include/hipSYCL/sycl/libkernel/detail/thread_hierarchy.hpp \
   /opt/hipSYCL/bin/../include/hipSYCL/glue/omp/omp_kernel_launcher.hpp \
+  /usr/include/omp.h \
   /opt/hipSYCL/bin/../include/hipSYCL/runtime/omp/omp_queue.hpp \
   /opt/hipSYCL/bin/../include/hipSYCL/runtime/omp/../generic/async_worker.hpp \
   /opt/hipSYCL/bin/../include/hipSYCL/runtime/omp/../executor.hpp \
   /opt/hipSYCL/bin/../include/hipSYCL/runtime/omp/../inorder_queue.hpp \
   /opt/hipSYCL/bin/../include/hipSYCL/glue/omp/../generic/host/collective_execution_engine.hpp \
+  /usr/include/boost/fiber/fiber.hpp /usr/include/boost/assert.hpp \
+  /usr/include/boost/config.hpp /usr/include/boost/config/user.hpp \
+  /usr/include/boost/config/detail/select_compiler_config.hpp \
+  /usr/include/boost/config/compiler/nvcc.hpp \
+  /usr/include/boost/config/compiler/gcc.hpp \
+  /usr/include/boost/config/detail/select_stdlib_config.hpp \
+  /usr/include/boost/config/stdlib/libstdcpp3.hpp \
+  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/experimental/memory_resource \
+  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/shared_mutex \
+  /usr/include/boost/config/detail/select_platform_config.hpp \
+  /usr/include/boost/config/platform/linux.hpp \
+  /usr/include/boost/config/detail/posix_features.hpp \
+  /usr/include/boost/config/detail/suffix.hpp \
+  /usr/include/boost/intrusive_ptr.hpp \
+  /usr/include/boost/smart_ptr/intrusive_ptr.hpp \
+  /usr/include/boost/detail/workaround.hpp \
+  /usr/include/boost/config/workaround.hpp \
+  /usr/include/boost/smart_ptr/detail/sp_convertible.hpp \
+  /usr/include/boost/smart_ptr/detail/sp_nullptr_t.hpp \
+  /usr/include/boost/smart_ptr/detail/sp_noexcept.hpp \
+  /usr/include/boost/config/no_tr1/functional.hpp \
+  /usr/include/boost/smart_ptr/detail/operator_bool.hpp \
+  /usr/include/boost/predef.h /usr/include/boost/predef/language.h \
+  /usr/include/boost/predef/language/stdc.h \
+  /usr/include/boost/predef/version_number.h \
+  /usr/include/boost/predef/make.h \
+  /usr/include/boost/predef/detail/test.h \
+  /usr/include/boost/predef/language/stdcpp.h \
+  /usr/include/boost/predef/language/objc.h \
+  /usr/include/boost/predef/architecture.h \
+  /usr/include/boost/predef/architecture/alpha.h \
+  /usr/include/boost/predef/architecture/arm.h \
+  /usr/include/boost/predef/architecture/blackfin.h \
+  /usr/include/boost/predef/architecture/convex.h \
+  /usr/include/boost/predef/architecture/ia64.h \
+  /usr/include/boost/predef/architecture/m68k.h \
+  /usr/include/boost/predef/architecture/mips.h \
+  /usr/include/boost/predef/architecture/parisc.h \
+  /usr/include/boost/predef/architecture/ppc.h \
+  /usr/include/boost/predef/architecture/pyramid.h \
+  /usr/include/boost/predef/architecture/rs6k.h \
+  /usr/include/boost/predef/architecture/sparc.h \
+  /usr/include/boost/predef/architecture/superh.h \
+  /usr/include/boost/predef/architecture/sys370.h \
+  /usr/include/boost/predef/architecture/sys390.h \
+  /usr/include/boost/predef/architecture/x86.h \
+  /usr/include/boost/predef/architecture/x86/32.h \
+  /usr/include/boost/predef/architecture/x86/64.h \
+  /usr/include/boost/predef/architecture/z.h \
+  /usr/include/boost/predef/compiler.h \
+  /usr/include/boost/predef/compiler/borland.h \
+  /usr/include/boost/predef/compiler/clang.h \
+  /usr/include/boost/predef/detail/comp_detected.h \
+  /usr/include/boost/predef/compiler/comeau.h \
+  /usr/include/boost/predef/compiler/compaq.h \
+  /usr/include/boost/predef/compiler/diab.h \
+  /usr/include/boost/predef/compiler/digitalmars.h \
+  /usr/include/boost/predef/compiler/dignus.h \
+  /usr/include/boost/predef/compiler/edg.h \
+  /usr/include/boost/predef/compiler/ekopath.h \
+  /usr/include/boost/predef/compiler/gcc_xml.h \
+  /usr/include/boost/predef/compiler/gcc.h \
+  /usr/include/boost/predef/compiler/greenhills.h \
+  /usr/include/boost/predef/compiler/hp_acc.h \
+  /usr/include/boost/predef/compiler/iar.h \
+  /usr/include/boost/predef/compiler/ibm.h \
+  /usr/include/boost/predef/compiler/intel.h \
+  /usr/include/boost/predef/compiler/kai.h \
+  /usr/include/boost/predef/compiler/llvm.h \
+  /usr/include/boost/predef/compiler/metaware.h \
+  /usr/include/boost/predef/compiler/metrowerks.h \
+  /usr/include/boost/predef/compiler/microtec.h \
+  /usr/include/boost/predef/compiler/mpw.h \
+  /usr/include/boost/predef/compiler/palm.h \
+  /usr/include/boost/predef/compiler/pgi.h \
+  /usr/include/boost/predef/compiler/sgi_mipspro.h \
+  /usr/include/boost/predef/compiler/sunpro.h \
+  /usr/include/boost/predef/compiler/tendra.h \
+  /usr/include/boost/predef/compiler/visualc.h \
+  /usr/include/boost/predef/compiler/watcom.h \
+  /usr/include/boost/predef/library.h \
+  /usr/include/boost/predef/library/c.h \
+  /usr/include/boost/predef/library/c/_prefix.h \
+  /usr/include/boost/predef/detail/_cassert.h \
+  /usr/include/boost/predef/library/c/gnu.h \
+  /usr/include/boost/predef/library/c/uc.h \
+  /usr/include/boost/predef/library/c/vms.h \
+  /usr/include/boost/predef/library/c/zos.h \
+  /usr/include/boost/predef/library/std.h \
+  /usr/include/boost/predef/library/std/_prefix.h \
+  /usr/include/boost/predef/detail/_exception.h \
+  /usr/include/boost/predef/library/std/cxx.h \
+  /usr/include/boost/predef/library/std/dinkumware.h \
+  /usr/include/boost/predef/library/std/libcomo.h \
+  /usr/include/boost/predef/library/std/modena.h \
+  /usr/include/boost/predef/library/std/msl.h \
+  /usr/include/boost/predef/library/std/roguewave.h \
+  /usr/include/boost/predef/library/std/sgi.h \
+  /usr/include/boost/predef/library/std/stdcpp3.h \
+  /usr/include/boost/predef/library/std/stlport.h \
+  /usr/include/boost/predef/library/std/vacpp.h \
+  /usr/include/boost/predef/os.h /usr/include/boost/predef/os/aix.h \
+  /usr/include/boost/predef/os/amigaos.h \
+  /usr/include/boost/predef/os/android.h \
+  /usr/include/boost/predef/os/beos.h /usr/include/boost/predef/os/bsd.h \
+  /usr/include/boost/predef/os/macos.h \
+  /usr/include/boost/predef/os/ios.h \
+  /usr/include/boost/predef/os/bsd/bsdi.h \
+  /usr/include/boost/predef/os/bsd/dragonfly.h \
+  /usr/include/boost/predef/os/bsd/free.h \
+  /usr/include/boost/predef/os/bsd/open.h \
+  /usr/include/boost/predef/os/bsd/net.h \
+  /usr/include/boost/predef/os/cygwin.h \
+  /usr/include/boost/predef/os/haiku.h \
+  /usr/include/boost/predef/os/hpux.h \
+  /usr/include/boost/predef/os/irix.h \
+  /usr/include/boost/predef/os/linux.h \
+  /usr/include/boost/predef/detail/os_detected.h \
+  /usr/include/boost/predef/os/os400.h \
+  /usr/include/boost/predef/os/qnxnto.h \
+  /usr/include/boost/predef/os/solaris.h \
+  /usr/include/boost/predef/os/unix.h /usr/include/boost/predef/os/vms.h \
+  /usr/include/boost/predef/os/windows.h \
+  /usr/include/boost/predef/other.h \
+  /usr/include/boost/predef/other/endian.h \
+  /usr/include/boost/predef/platform.h \
+  /usr/include/boost/predef/platform/mingw.h \
+  /usr/include/boost/predef/platform/windows_desktop.h \
+  /usr/include/boost/predef/platform/windows_store.h \
+  /usr/include/boost/predef/platform/windows_phone.h \
+  /usr/include/boost/predef/platform/windows_runtime.h \
+  /usr/include/boost/predef/platform/ios.h \
+  /usr/include/boost/predef/hardware.h \
+  /usr/include/boost/predef/hardware/simd.h \
+  /usr/include/boost/predef/hardware/simd/x86.h \
+  /usr/include/boost/predef/hardware/simd/x86/versions.h \
+  /usr/include/boost/predef/hardware/simd/x86_amd.h \
+  /usr/include/boost/predef/hardware/simd/x86_amd/versions.h \
+  /usr/include/boost/predef/hardware/simd/arm.h \
+  /usr/include/boost/predef/hardware/simd/arm/versions.h \
+  /usr/include/boost/predef/hardware/simd/ppc.h \
+  /usr/include/boost/predef/hardware/simd/ppc/versions.h \
+  /usr/include/boost/predef/version.h \
+  /usr/include/boost/fiber/detail/config.hpp \
+  /usr/include/boost/config/auto_link.hpp \
+  /usr/include/boost/fiber/detail/disable_overload.hpp \
+  /usr/include/boost/context/detail/disable_overload.hpp \
+  /usr/include/boost/context/detail/config.hpp \
+  /usr/include/boost/fiber/context.hpp \
+  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/map \
+  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/stl_tree.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/stl_map.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/stl_multimap.h \
+  /usr/include/boost/context/detail/apply.hpp \
+  /usr/include/boost/context/detail/index_sequence.hpp \
+  /usr/include/boost/context/continuation.hpp \
+  /usr/include/boost/context/continuation_fcontext.hpp \
+  /usr/include/boost/context/detail/exception.hpp \
+  /usr/include/boost/context/detail/fcontext.hpp \
+  /usr/include/boost/cstdint.hpp \
+  /usr/include/boost/context/detail/tuple.hpp \
+  /usr/include/boost/context/fixedsize_stack.hpp \
+  /usr/include/boost/context/stack_context.hpp \
+  /usr/include/boost/context/stack_traits.hpp \
+  /usr/include/boost/context/flags.hpp \
+  /usr/include/boost/context/preallocated.hpp \
+  /usr/include/boost/context/segmented_stack.hpp \
+  /usr/include/boost/intrusive/list.hpp \
+  /usr/include/boost/intrusive/detail/config_begin.hpp \
+  /usr/include/boost/intrusive/intrusive_fwd.hpp \
+  /usr/include/boost/intrusive/link_mode.hpp \
+  /usr/include/boost/intrusive/detail/workaround.hpp \
+  /usr/include/boost/intrusive/detail/assert.hpp \
+  /usr/include/boost/intrusive/list_hook.hpp \
+  /usr/include/boost/intrusive/detail/list_node.hpp \
+  /usr/include/boost/intrusive/pointer_rebind.hpp \
+  /usr/include/boost/intrusive/circular_list_algorithms.hpp \
+  /usr/include/boost/intrusive/detail/algo_type.hpp \
+  /usr/include/boost/core/no_exceptions_support.hpp \
+  /usr/include/boost/intrusive/detail/config_end.hpp \
+  /usr/include/boost/intrusive/options.hpp \
+  /usr/include/boost/intrusive/pack_options.hpp \
+  /usr/include/boost/intrusive/detail/mpl.hpp \
+  /usr/include/boost/move/detail/type_traits.hpp \
+  /usr/include/boost/move/detail/config_begin.hpp \
+  /usr/include/boost/move/detail/workaround.hpp \
+  /usr/include/boost/move/detail/meta_utils.hpp \
+  /usr/include/boost/move/detail/meta_utils_core.hpp \
+  /usr/include/boost/move/detail/config_end.hpp \
+  /usr/include/boost/static_assert.hpp \
+  /usr/include/boost/intrusive/detail/generic_hook.hpp \
+  /usr/include/boost/intrusive/pointer_traits.hpp \
+  /usr/include/boost/move/detail/pointer_element.hpp \
+  /usr/include/boost/intrusive/detail/node_holder.hpp \
+  /usr/include/boost/intrusive/detail/get_value_traits.hpp \
+  /usr/include/boost/intrusive/detail/hook_traits.hpp \
+  /usr/include/boost/intrusive/detail/parent_from_member.hpp \
+  /usr/include/boost/move/detail/to_raw_pointer.hpp \
+  /usr/include/boost/intrusive/detail/is_stateful_value_traits.hpp \
+  /usr/include/boost/intrusive/detail/function_detector.hpp \
+  /usr/include/boost/intrusive/detail/default_header_holder.hpp \
+  /usr/include/boost/intrusive/detail/reverse_iterator.hpp \
+  /usr/include/boost/intrusive/detail/iterator.hpp \
+  /usr/include/boost/intrusive/detail/std_fwd.hpp \
+  /usr/include/boost/move/detail/std_ns_begin.hpp \
+  /usr/include/boost/move/detail/std_ns_end.hpp \
+  /usr/include/boost/move/detail/iterator_traits.hpp \
+  /usr/include/boost/intrusive/detail/uncast.hpp \
+  /usr/include/boost/intrusive/detail/list_iterator.hpp \
+  /usr/include/boost/intrusive/detail/iiterator.hpp \
+  /usr/include/boost/intrusive/detail/array_initializer.hpp \
+  /usr/include/boost/intrusive/detail/exception_disposer.hpp \
+  /usr/include/boost/intrusive/detail/equal_to_value.hpp \
+  /usr/include/boost/intrusive/detail/key_nodeptr_comp.hpp \
+  /usr/include/boost/intrusive/detail/ebo_functor_holder.hpp \
+  /usr/include/boost/move/utility_core.hpp \
+  /usr/include/boost/move/core.hpp \
+  /usr/include/boost/intrusive/detail/tree_value_compare.hpp \
+  /usr/include/boost/intrusive/detail/simple_disposers.hpp \
+  /usr/include/boost/intrusive/detail/size_holder.hpp \
+  /usr/include/boost/intrusive/detail/algorithm.hpp \
+  /usr/include/boost/intrusive/detail/minimal_less_equal_header.hpp \
+  /usr/include/boost/intrusive/parent_from_member.hpp \
+  /usr/include/boost/intrusive/set.hpp \
+  /usr/include/boost/intrusive/rbtree.hpp \
+  /usr/include/boost/intrusive/detail/minimal_pair_header.hpp \
+  /usr/include/boost/intrusive/set_hook.hpp \
+  /usr/include/boost/intrusive/detail/rbtree_node.hpp \
+  /usr/include/boost/intrusive/rbtree_algorithms.hpp \
+  /usr/include/boost/intrusive/bstree_algorithms.hpp \
+  /usr/include/boost/intrusive/detail/bstree_algorithms_base.hpp \
+  /usr/include/boost/intrusive/detail/math.hpp \
+  /usr/include/boost/intrusive/pointer_plus_bits.hpp \
+  /usr/include/boost/intrusive/detail/tree_node.hpp \
+  /usr/include/boost/intrusive/bstree.hpp \
+  /usr/include/boost/intrusive/bs_set_hook.hpp \
+  /usr/include/boost/intrusive/detail/tree_iterator.hpp \
+  /usr/include/boost/intrusive/detail/empty_node_checker.hpp \
+  /usr/include/boost/intrusive/detail/node_cloner_disposer.hpp \
+  /usr/include/boost/move/adl_move_swap.hpp \
+  /usr/include/boost/intrusive/slist.hpp \
+  /usr/include/boost/intrusive/slist_hook.hpp \
+  /usr/include/boost/intrusive/detail/slist_node.hpp \
+  /usr/include/boost/intrusive/circular_slist_algorithms.hpp \
+  /usr/include/boost/intrusive/detail/common_slist_algorithms.hpp \
+  /usr/include/boost/intrusive/linear_slist_algorithms.hpp \
+  /usr/include/boost/intrusive/detail/slist_iterator.hpp \
+  /usr/include/boost/fiber/detail/data.hpp \
+  /usr/include/boost/fiber/detail/spinlock.hpp \
+  /usr/include/boost/fiber/detail/spinlock_ttas_adaptive.hpp \
+  /usr/include/boost/fiber/detail/cpu_relax.hpp \
+  /usr/include/boost/fiber/detail/spinlock_status.hpp \
+  /usr/include/boost/fiber/detail/spinlock_ttas.hpp \
+  /usr/include/boost/fiber/detail/spinlock_ttas_adaptive_futex.hpp \
+  /usr/include/boost/fiber/detail/futex.hpp \
+  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include/linux/futex.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include/linux/types.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include/asm/types.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include/asm-generic/types.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include/asm-generic/int-ll64.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include/asm/bitsperlong.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include/asm-generic/bitsperlong.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include/linux/posix_types.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include/linux/stddef.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include/asm/posix_types.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include/asm/posix_types_64.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include/asm-generic/posix_types.h \
+  /usr/include/boost/fiber/detail/spinlock_ttas_futex.hpp \
+  /usr/include/boost/fiber/detail/decay_copy.hpp \
+  /usr/include/boost/fiber/detail/fss.hpp \
+  /usr/include/boost/fiber/exceptions.hpp \
+  /usr/include/boost/fiber/fixedsize_stack.hpp \
+  /usr/include/boost/fiber/policy.hpp \
+  /usr/include/boost/fiber/properties.hpp \
+  /usr/include/boost/fiber/segmented_stack.hpp \
+  /usr/include/boost/fiber/type.hpp /usr/include/boost/fiber/barrier.hpp \
+  /usr/include/boost/fiber/condition_variable.hpp \
+  /usr/include/boost/fiber/detail/convert.hpp \
+  /usr/include/boost/fiber/mutex.hpp \
+  /usr/include/boost/fiber/operations.hpp \
+  /usr/include/boost/fiber/algo/algorithm.hpp \
+  /usr/include/boost/fiber/scheduler.hpp \
+  /opt/hipSYCL/bin/../include/hipSYCL/glue/generic/host/range_decomposition.hpp \
   /opt/hipSYCL/bin/../include/hipSYCL/glue/omp/../generic/host/iterate_range.hpp \
   /opt/hipSYCL/bin/../include/hipSYCL/glue/omp/../generic/host/sequential_reducer.hpp \
   /opt/hipSYCL/bin/../include/SYCL/../hipSYCL/sycl/detail/function_set.hpp \
@@ -610,4 +889,8 @@ CMakeFiles/mwe-hipsycl-fft.dir/src/mwe.cpp.o: \
   /opt/hipSYCL/bin/../include/SYCL/../hipSYCL/sycl/interop_handle.hpp \
   /opt/hipSYCL/bin/../include/SYCL/../hipSYCL/sycl/buffer_explicit_behavior.hpp \
   /opt/hipSYCL/bin/../include/hipSYCL/sycl/info/queue.hpp \
-  /usr/local/cuda/include/cufft.h /usr/local/cuda/include/cuComplex.h
+  /usr/local/cuda/include/cufft.h /usr/local/cuda/include/cuComplex.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/math.h \
+  /opt/hipSYCL/bin/../include/hipSYCL/std/hiplike/complex \
+  /usr/lib/llvm-14/lib/clang/14.0.6/include/cuda_wrappers/complex \
+  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/complex
