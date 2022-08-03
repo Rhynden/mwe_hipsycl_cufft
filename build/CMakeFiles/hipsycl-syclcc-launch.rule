@@ -1,1 +1,1 @@
-/opt/hipSYCL/lib/cmake/hipSYCL/syclcc-launcher --launcher-cxx-compiler=/usr/bin/clang++-14 --launcher-syclcc=/opt/hipSYCL/bin/syclcc-clang  --hipsycl-targets="omp;cuda:sm_75"
+/opt/hipSYCL/lib/cmake/hipSYCL/syclcc-launcher --launcher-cxx-compiler=/usr/bin/clang++-14 --launcher-syclcc=/opt/hipSYCL/bin/syclcc-clang  --hipsycl-targets="omp;hip:gfx906"

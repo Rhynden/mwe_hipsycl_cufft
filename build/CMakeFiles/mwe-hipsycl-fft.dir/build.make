@@ -75,7 +75,7 @@ CMakeFiles/mwe-hipsycl-fft.dir/src/mwe.cpp.o: /opt/hipSYCL/lib/cmake/hipSYCL/syc
 CMakeFiles/mwe-hipsycl-fft.dir/src/mwe.cpp.o: CMakeFiles/hipsycl-syclcc-launch.rule
 CMakeFiles/mwe-hipsycl-fft.dir/src/mwe.cpp.o: CMakeFiles/mwe-hipsycl-fft.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/boeck/mwe_hipSYCL_cufft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/mwe-hipsycl-fft.dir/src/mwe.cpp.o"
-	/opt/hipSYCL/lib/cmake/hipSYCL/syclcc-launcher --launcher-cxx-compiler=/usr/bin/clang++-14 --launcher-syclcc=/opt/hipSYCL/bin/syclcc-clang  --hipsycl-targets="omp;cuda:sm_75" /usr/bin/clang++-14 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mwe-hipsycl-fft.dir/src/mwe.cpp.o -MF CMakeFiles/mwe-hipsycl-fft.dir/src/mwe.cpp.o.d -o CMakeFiles/mwe-hipsycl-fft.dir/src/mwe.cpp.o -c /home/boeck/mwe_hipSYCL_cufft/src/mwe.cpp
+	/opt/hipSYCL/lib/cmake/hipSYCL/syclcc-launcher --launcher-cxx-compiler=/usr/bin/clang++-14 --launcher-syclcc=/opt/hipSYCL/bin/syclcc-clang  --hipsycl-targets="omp;hip:gfx906" /usr/bin/clang++-14 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mwe-hipsycl-fft.dir/src/mwe.cpp.o -MF CMakeFiles/mwe-hipsycl-fft.dir/src/mwe.cpp.o.d -o CMakeFiles/mwe-hipsycl-fft.dir/src/mwe.cpp.o -c /home/boeck/mwe_hipSYCL_cufft/src/mwe.cpp
 
 CMakeFiles/mwe-hipsycl-fft.dir/src/mwe.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mwe-hipsycl-fft.dir/src/mwe.cpp.i"
@@ -94,8 +94,6 @@ mwe__hipsycl__fft_EXTERNAL_OBJECTS =
 
 mwe-hipsycl-fft: CMakeFiles/mwe-hipsycl-fft.dir/src/mwe.cpp.o
 mwe-hipsycl-fft: CMakeFiles/mwe-hipsycl-fft.dir/build.make
-mwe-hipsycl-fft: /usr/local/cuda/lib64/libcudart.so
-mwe-hipsycl-fft: /usr/local/cuda/lib64/libcufft.so
 mwe-hipsycl-fft: /opt/hipSYCL/lib/libhipSYCL-rt.so
 mwe-hipsycl-fft: CMakeFiles/mwe-hipsycl-fft.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/boeck/mwe_hipSYCL_cufft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable mwe-hipsycl-fft"

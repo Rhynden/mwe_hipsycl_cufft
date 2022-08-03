@@ -1,5 +1,5 @@
 #include <SYCL/sycl.hpp>
-#include <cufft.h>
+#include <hipfft.h>
 #include <iostream>
 #include <math.h>
 #include <complex>
@@ -9,7 +9,7 @@ using namespace sycl;
 
 int main(int argc, char *argv[])
 {
-    std::cout << "Starting mwe-hipsycl-cufft" << std::endl;
+    std::cout << "hipfft 3D double-precision complex-to-complex transform\n";
 
     sycl::queue myQueue;
 
@@ -26,6 +26,7 @@ int main(int argc, char *argv[])
     // }); });
 
     std::vector<std::complex<float>> cdata(64);
+    size_t complex_bytes = sizeof(decltype(cdata)::value_type) * cdata.size();
     const unsigned int dim = 4;
     for (size_t i = 0; i < dim * dim * dim; i++)
     {
@@ -55,13 +56,13 @@ int main(int argc, char *argv[])
             // or a call to a library that enqueues operations on the stream etc
 
             // create FFT plan
-            cufftHandle fftPlan;
+            // cufftHandle fftPlan;
             // int n[] = {(int)4, (int)4, (int)4};
             // cufftPlanMany(&fftPlan, 3, n, NULL, 0, 0, NULL, 0, 0, CUFFT_C2C, 1);
             // cufftPlan2d(&fftPlan, 4, 4, CUFFT_C2C);
-            cufftPlan3d(&fftPlan, dim, dim, dim, CUFFT_C2C);
+            // cufftPlan3d(&fftPlan, dim, dim, dim, CUFFT_C2C);
             // cufftPlan1d(&fftPlan, dim* dim* dim, CUFFT_C2C, 1);
-            cufftComplex *data;
+            // cufftComplex *data;
 
             for (int i = 0; i < dim; i++)
             {
@@ -76,12 +77,12 @@ int main(int argc, char *argv[])
                 }
                 out << "\n";
             }
-            cudaMalloc((void **)&data, sizeof(cufftComplex) * dim * dim * dim);
-            cudaMemcpy(data, cdata.data(), sizeof(cufftComplex) * dim * dim * dim, cudaMemcpyHostToDevice);
-            cufftExecC2C(fftPlan, data, data, CUFFT_FORWARD);
-            cudaMemcpy((void *)cdata.data(), data, sizeof(cufftComplex) * dim * dim * dim, cudaMemcpyDeviceToHost);
-            cudaDeviceSynchronize();
-            out << "After cufft\n";
+            // cudaMalloc((void **)&data, sizeof(cufftComplex) * dim * dim * dim);
+            // cudaMemcpy(data, cdata.data(), sizeof(cufftComplex) * dim * dim * dim, cudaMemcpyHostToDevice);
+            // cufftExecC2C(fftPlan, data, data, CUFFT_FORWARD);
+            // cudaMemcpy((void *)cdata.data(), data, sizeof(cufftComplex) * dim * dim * dim, cudaMemcpyDeviceToHost);
+            // cudaDeviceSynchronize();
+            out << "After hipfft\n";
             for (int i = 0; i < dim; i++)
             {
                 for (int j = 0; j < dim; j++)
@@ -94,9 +95,9 @@ int main(int argc, char *argv[])
                     out << "\n";
                 }
                 out << "\n";
-            }
-            cufftDestroy(fftPlan);
-            cudaFree(data);}); });
+            }}); });
+    // cufftDestroy(fftPlan);
+    // cudaFree(data);}); });
 
     //   hipMemcpyAsync(target_ptr, native_mem, test_size * sizeof(int),
     //                   hipMemcpyDeviceToHost, stream); });

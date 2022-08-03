@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/clang++-14
 CXX_DEFINES = 
 
-CXX_INCLUDES = -isystem /usr/local/cuda/include -isystem /opt/hipSYCL/include
+CXX_INCLUDES = -I/opt/rocm/rocfft/include -I/opt/rocm/opencl/include -isystem /opt/hipSYCL/include
 
 CXX_FLAGS = -std=gnu++20
 

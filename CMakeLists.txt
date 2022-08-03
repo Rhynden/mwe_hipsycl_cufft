@@ -6,7 +6,7 @@ set(CMAKE_CXX_COMPILER "/usr/bin/clang++-14")
 #   set(CMAKE_CUDA_ARCHITECTURES 75)
 # endif()
 
-project(mwe-hipsycl-cufft VERSION 1.0 LANGUAGES CXX CUDA)
+project(mwe-hipsycl-cufft VERSION 1.0 LANGUAGES CXX)
 
 set(CMAKE_CXX_STANDARD 20)
 set(SRC_PATH "src" CACHE PATH "Sources.")
@@ -16,15 +16,19 @@ set(MY_SOURCE_FILES
 
 find_package(hipSYCL REQUIRED)
 # find_package(CUDA REQUIRED)
-find_package(CUDAToolkit REQUIRED)
+# find_package(CUDAToolkit REQUIRED)
 
 message(STATUS "${CMAKE_CUDA_COMPILER_ID} ${CMAKE_CUDA_COMPILER_VERSION}")
+
+
+include_directories(/opt/rocm/rocfft/include /opt/rocm/opencl/include/ )
+link_directories(/usr/lib/x86_64-linux-gnu /opt/rocm/lib)
 
 add_executable(mwe-hipsycl-fft ${MY_SOURCE_FILES})
 
 # set_target_properties(mwe-hipsycl-fft PROPERTIES
 #                             CUDA_SEPARABLE_COMPILATION ON)
 
-target_link_libraries(mwe-hipsycl-fft PUBLIC CUDA::cudart CUDA::cufft)
+target_link_libraries(mwe-hipsycl-fft PUBLIC rocfft hipfft)
 # target_include_directories(mwe-hipsycl-fft PUBLIC CUDA::cufft)
 add_sycl_to_target(TARGET mwe-hipsycl-fft)
