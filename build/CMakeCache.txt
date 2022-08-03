@@ -15,10 +15,10 @@
 ########################
 
 //Path to a program.
-CMAKE_ADDR2LINE:FILEPATH=/usr/bin/llvm-addr2line-14
+CMAKE_ADDR2LINE:FILEPATH=/usr/bin/addr2line
 
 //Path to a program.
-CMAKE_AR:FILEPATH=/usr/bin/llvm-ar-14
+CMAKE_AR:FILEPATH=/usr/bin/ar
 
 //Choose the type of build, options are: None Debug Release RelWithDebInfo
 // MinSizeRel ...
@@ -27,11 +27,16 @@ CMAKE_BUILD_TYPE:STRING=
 //Enable/Disable color output during build.
 CMAKE_COLOR_MAKEFILE:BOOL=ON
 
-//LLVM archiver
-CMAKE_CXX_COMPILER_AR:FILEPATH=/usr/bin/llvm-ar-14
+//CXX compiler
+CMAKE_CXX_COMPILER:FILEPATH=/usr/bin/c++
 
-//Generate index for LLVM archive
-CMAKE_CXX_COMPILER_RANLIB:FILEPATH=/usr/bin/llvm-ranlib-14
+//A wrapper around 'ar' adding the appropriate '--plugin' option
+// for the GCC compiler
+CMAKE_CXX_COMPILER_AR:FILEPATH=/usr/bin/gcc-ar-7
+
+//A wrapper around 'ranlib' adding the appropriate '--plugin' option
+// for the GCC compiler
+CMAKE_CXX_COMPILER_RANLIB:FILEPATH=/usr/bin/gcc-ranlib-7
 
 //Flags used by the CXX compiler during all build types.
 CMAKE_CXX_FLAGS:STRING=
@@ -49,7 +54,7 @@ CMAKE_CXX_FLAGS_RELEASE:STRING=-O3 -DNDEBUG
 CMAKE_CXX_FLAGS_RELWITHDEBINFO:STRING=-O2 -g -DNDEBUG
 
 //Path to a program.
-CMAKE_DLLTOOL:FILEPATH=/usr/bin/llvm-dlltool-14
+CMAKE_DLLTOOL:FILEPATH=CMAKE_DLLTOOL-NOTFOUND
 
 //Flags used by the linker during all build types.
 CMAKE_EXE_LINKER_FLAGS:STRING=
@@ -99,13 +104,13 @@ CMAKE_MODULE_LINKER_FLAGS_RELEASE:STRING=
 CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO:STRING=
 
 //Path to a program.
-CMAKE_NM:FILEPATH=/usr/bin/llvm-nm-14
+CMAKE_NM:FILEPATH=/usr/bin/nm
 
 //Path to a program.
-CMAKE_OBJCOPY:FILEPATH=/usr/bin/llvm-objcopy-14
+CMAKE_OBJCOPY:FILEPATH=/usr/bin/objcopy
 
 //Path to a program.
-CMAKE_OBJDUMP:FILEPATH=/usr/bin/llvm-objdump-14
+CMAKE_OBJDUMP:FILEPATH=/usr/bin/objdump
 
 //Value Computed by CMake
 CMAKE_PROJECT_DESCRIPTION:STATIC=
@@ -132,10 +137,10 @@ CMAKE_PROJECT_VERSION_PATCH:STATIC=
 CMAKE_PROJECT_VERSION_TWEAK:STATIC=
 
 //Path to a program.
-CMAKE_RANLIB:FILEPATH=/usr/bin/llvm-ranlib-14
+CMAKE_RANLIB:FILEPATH=/usr/bin/ranlib
 
 //Path to a program.
-CMAKE_READELF:FILEPATH=/usr/bin/llvm-readelf-14
+CMAKE_READELF:FILEPATH=/usr/bin/readelf
 
 //Flags used by the linker during the creation of shared libraries
 // during all build types.
@@ -185,7 +190,7 @@ CMAKE_STATIC_LINKER_FLAGS_RELEASE:STRING=
 CMAKE_STATIC_LINKER_FLAGS_RELWITHDEBINFO:STRING=
 
 //Path to a program.
-CMAKE_STRIP:FILEPATH=/usr/bin/llvm-strip-14
+CMAKE_STRIP:FILEPATH=/usr/bin/strip
 
 //If this value is on, makefiles will be generated without the
 // .SILENT directive, and all commands will be echoed to the console
@@ -224,6 +229,87 @@ HIPSYCL_TARGETS:STRING=omp;hip:gfx906
 //Enable compiler support for the nd_range parallel_for paradigm
 // to accelerate it. Requires using clang as host compiler.
 HIPSYCL_USE_ACCELERATED_CPU:STRING=
+
+//Semicolon delimited flags for CLANG
+HIP_CLANG_FLAGS:STRING=
+
+//Semicolon delimited flags for CLANG
+HIP_CLANG_FLAGS_DEBUG:STRING=
+
+//Semicolon delimited flags for CLANG
+HIP_CLANG_FLAGS_MINSIZEREL:STRING=
+
+//Semicolon delimited flags for CLANG
+HIP_CLANG_FLAGS_RELEASE:STRING=
+
+//Semicolon delimited flags for CLANG
+HIP_CLANG_FLAGS_RELWITHDEBINFO:STRING=
+
+//HIP compiler as computed by hipconfig
+HIP_COMPILER:STRING=clang
+
+//Path to a program.
+HIP_HIPCC_CMAKE_LINKER_HELPER:FILEPATH=/opt/rocm-5.2.1/hip/bin/hipcc_cmake_linker_helper
+
+//Path to a program.
+HIP_HIPCC_EXECUTABLE:FILEPATH=/opt/rocm-5.2.1/hip/bin/hipcc
+
+//Semicolon delimited flags for HIPCC
+HIP_HIPCC_FLAGS:STRING=
+
+//Semicolon delimited flags for HIPCC
+HIP_HIPCC_FLAGS_DEBUG:STRING=
+
+//Semicolon delimited flags for HIPCC
+HIP_HIPCC_FLAGS_MINSIZEREL:STRING=
+
+//Semicolon delimited flags for HIPCC
+HIP_HIPCC_FLAGS_RELEASE:STRING=
+
+//Semicolon delimited flags for HIPCC
+HIP_HIPCC_FLAGS_RELWITHDEBINFO:STRING=
+
+//Path to a program.
+HIP_HIPCONFIG_EXECUTABLE:FILEPATH=/opt/rocm-5.2.1/hip/bin/hipconfig
+
+//Host code compilation mode
+HIP_HOST_COMPILATION_CPP:BOOL=ON
+
+//Semicolon delimted flags for NVCC
+HIP_NVCC_FLAGS:STRING=
+
+//Semicolon delimited flags for NVCC
+HIP_NVCC_FLAGS_DEBUG:STRING=
+
+//Semicolon delimited flags for NVCC
+HIP_NVCC_FLAGS_MINSIZEREL:STRING=
+
+//Semicolon delimited flags for NVCC
+HIP_NVCC_FLAGS_RELEASE:STRING=
+
+//Semicolon delimited flags for NVCC
+HIP_NVCC_FLAGS_RELWITHDEBINFO:STRING=
+
+//Path to which HIP has been installed
+HIP_PATH:PATH=/opt/rocm/hip
+
+//HIP platform as computed by hipconfig
+HIP_PLATFORM:STRING=amd
+
+//HIP installed location
+HIP_ROOT_DIR:PATH=/opt/rocm-5.2.1/hip
+
+//HIP runtime as computed by hipconfig
+HIP_RUNTIME:STRING=rocclr
+
+//Print out the commands run while compiling the HIP source file.
+//  With the Makefile generator this defaults to VERBOSE variable
+// specified on the command line, but can be forced on with this
+// option.
+HIP_VERBOSE_BUILD:BOOL=OFF
+
+//Version of HIP as computed from hipcc
+HIP_VERSION:STRING=5.2.21152-4b155a06
 
 //Sources.
 SRC_PATH:PATH=src
@@ -265,6 +351,8 @@ CMAKE_COMMAND:INTERNAL=/snap/cmake/1130/bin/cmake
 CMAKE_CPACK_COMMAND:INTERNAL=/snap/cmake/1130/bin/cpack
 //Path to ctest program executable.
 CMAKE_CTEST_COMMAND:INTERNAL=/snap/cmake/1130/bin/ctest
+//ADVANCED property for variable: CMAKE_CXX_COMPILER
+CMAKE_CXX_COMPILER-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_CXX_COMPILER_AR
 CMAKE_CXX_COMPILER_AR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_CXX_COMPILER_RANLIB
@@ -374,4 +462,54 @@ CMAKE_UNAME:INTERNAL=/bin/uname
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
 //STRINGS property for variable: HIPSYCL_PLATFORM
 HIPSYCL_PLATFORM-STRINGS:INTERNAL=omp;cuda;hip
+//ADVANCED property for variable: HIP_CLANG_FLAGS
+HIP_CLANG_FLAGS-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: HIP_CLANG_FLAGS_DEBUG
+HIP_CLANG_FLAGS_DEBUG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: HIP_CLANG_FLAGS_MINSIZEREL
+HIP_CLANG_FLAGS_MINSIZEREL-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: HIP_CLANG_FLAGS_RELEASE
+HIP_CLANG_FLAGS_RELEASE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: HIP_CLANG_FLAGS_RELWITHDEBINFO
+HIP_CLANG_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: HIP_COMPILER
+HIP_COMPILER-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: HIP_HIPCC_CMAKE_LINKER_HELPER
+HIP_HIPCC_CMAKE_LINKER_HELPER-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: HIP_HIPCC_EXECUTABLE
+HIP_HIPCC_EXECUTABLE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: HIP_HIPCC_FLAGS
+HIP_HIPCC_FLAGS-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: HIP_HIPCC_FLAGS_DEBUG
+HIP_HIPCC_FLAGS_DEBUG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: HIP_HIPCC_FLAGS_MINSIZEREL
+HIP_HIPCC_FLAGS_MINSIZEREL-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: HIP_HIPCC_FLAGS_RELEASE
+HIP_HIPCC_FLAGS_RELEASE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: HIP_HIPCC_FLAGS_RELWITHDEBINFO
+HIP_HIPCC_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: HIP_HIPCONFIG_EXECUTABLE
+HIP_HIPCONFIG_EXECUTABLE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: HIP_HOST_COMPILATION_CPP
+HIP_HOST_COMPILATION_CPP-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: HIP_NVCC_FLAGS
+HIP_NVCC_FLAGS-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: HIP_NVCC_FLAGS_DEBUG
+HIP_NVCC_FLAGS_DEBUG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: HIP_NVCC_FLAGS_MINSIZEREL
+HIP_NVCC_FLAGS_MINSIZEREL-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: HIP_NVCC_FLAGS_RELEASE
+HIP_NVCC_FLAGS_RELEASE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: HIP_NVCC_FLAGS_RELWITHDEBINFO
+HIP_NVCC_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: HIP_PLATFORM
+HIP_PLATFORM-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: HIP_RUNTIME
+HIP_RUNTIME-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: HIP_VERSION
+HIP_VERSION-ADVANCED:INTERNAL=1
+//Location of 
+HIP_run_hipcc:INTERNAL=/opt/rocm/hip/cmake/FindHIP/run_hipcc.cmake
+//Location of 
+HIP_run_make2cmake:INTERNAL=/opt/rocm/hip/cmake/FindHIP/run_make2cmake.cmake
 

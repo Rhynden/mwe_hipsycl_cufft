@@ -75,15 +75,15 @@ CMakeFiles/mwe-hipsycl-fft.dir/src/mwe.cpp.o: /opt/hipSYCL/lib/cmake/hipSYCL/syc
 CMakeFiles/mwe-hipsycl-fft.dir/src/mwe.cpp.o: CMakeFiles/hipsycl-syclcc-launch.rule
 CMakeFiles/mwe-hipsycl-fft.dir/src/mwe.cpp.o: CMakeFiles/mwe-hipsycl-fft.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/boeck/mwe_hipSYCL_cufft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/mwe-hipsycl-fft.dir/src/mwe.cpp.o"
-	/opt/hipSYCL/lib/cmake/hipSYCL/syclcc-launcher --launcher-cxx-compiler=/usr/bin/clang++-14 --launcher-syclcc=/opt/hipSYCL/bin/syclcc-clang  --hipsycl-targets="omp;hip:gfx906" /usr/bin/clang++-14 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mwe-hipsycl-fft.dir/src/mwe.cpp.o -MF CMakeFiles/mwe-hipsycl-fft.dir/src/mwe.cpp.o.d -o CMakeFiles/mwe-hipsycl-fft.dir/src/mwe.cpp.o -c /home/boeck/mwe_hipSYCL_cufft/src/mwe.cpp
+	/opt/hipSYCL/lib/cmake/hipSYCL/syclcc-launcher --launcher-cxx-compiler=/usr/bin/c++ --launcher-syclcc=/opt/hipSYCL/bin/syclcc-clang  --hipsycl-targets="omp;hip:gfx906" /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mwe-hipsycl-fft.dir/src/mwe.cpp.o -MF CMakeFiles/mwe-hipsycl-fft.dir/src/mwe.cpp.o.d -o CMakeFiles/mwe-hipsycl-fft.dir/src/mwe.cpp.o -c /home/boeck/mwe_hipSYCL_cufft/src/mwe.cpp
 
 CMakeFiles/mwe-hipsycl-fft.dir/src/mwe.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mwe-hipsycl-fft.dir/src/mwe.cpp.i"
-	/usr/bin/clang++-14 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/boeck/mwe_hipSYCL_cufft/src/mwe.cpp > CMakeFiles/mwe-hipsycl-fft.dir/src/mwe.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/boeck/mwe_hipSYCL_cufft/src/mwe.cpp > CMakeFiles/mwe-hipsycl-fft.dir/src/mwe.cpp.i
 
 CMakeFiles/mwe-hipsycl-fft.dir/src/mwe.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mwe-hipsycl-fft.dir/src/mwe.cpp.s"
-	/usr/bin/clang++-14 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/boeck/mwe_hipSYCL_cufft/src/mwe.cpp -o CMakeFiles/mwe-hipsycl-fft.dir/src/mwe.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/boeck/mwe_hipSYCL_cufft/src/mwe.cpp -o CMakeFiles/mwe-hipsycl-fft.dir/src/mwe.cpp.s
 
 # Object files for target mwe-hipsycl-fft
 mwe__hipsycl__fft_OBJECTS = \

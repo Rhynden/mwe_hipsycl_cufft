@@ -1,5 +1,5 @@
 #include <SYCL/sycl.hpp>
-#include <hipfft.h>
+#include <hipfft/hipfft.h>
 #include <iostream>
 #include <math.h>
 #include <complex>
@@ -44,25 +44,31 @@ int main(int argc, char *argv[])
         cgh.hipSYCL_enqueue_custom_operation([=](sycl::interop_handle &h)
                                              {
             out << "I am a sycl custom task\n";
-            // Can extract device pointers from accessors
-            // void *native_mem = h.get_native_mem<sycl::backend::hip>(acc);
-            // Can extract stream (note: get_native_queue() may not be
-            // supported on CPU backends)
-            // hipStream_t stream = h.get_native_queue<sycl::backend::hip>();
-            // Can extract HIP device (note: get_native_device() may not be
-            // supported on CPU backends)
-            // int dev = h.get_native_device<sycl::backend::hip>();
-            // Can enqueue arbitrary backend operations. This could also be a kernel launch
-            // or a call to a library that enqueues operations on the stream etc
+            hipError_t hip_rt;
+            hipfftComplex *x;
+            hip_rt = hipMalloc(&x, complex_bytes);
+            if (hip_rt != hipSuccess)
+                throw std::runtime_error("hipMalloc failed");
+
+            hip_rt = hipMemcpy(x, cdata.data(), complex_bytes, hipMemcpyHostToDevice);
+            if (hip_rt != hipSuccess)
+                throw std::runtime_error("hipMemcpy failed");
 
             // create FFT plan
-            // cufftHandle fftPlan;
-            // int n[] = {(int)4, (int)4, (int)4};
-            // cufftPlanMany(&fftPlan, 3, n, NULL, 0, 0, NULL, 0, 0, CUFFT_C2C, 1);
-            // cufftPlan2d(&fftPlan, 4, 4, CUFFT_C2C);
-            // cufftPlan3d(&fftPlan, dim, dim, dim, CUFFT_C2C);
-            // cufftPlan1d(&fftPlan, dim* dim* dim, CUFFT_C2C, 1);
-            // cufftComplex *data;
+            // Create plan
+            hipfftHandle plan;
+            hipfftResult hipfft_rt = hipfftCreate(&plan);
+            if (hipfft_rt != HIPFFT_SUCCESS)
+                throw std::runtime_error("failed to create plan");
+
+            hipfft_rt = hipfftPlan3d(&plan,       // plan handle
+                                     4,          // transform length
+                                     4,          // transform length
+                                     4,          // transform length
+                                     HIPFFT_C2C); // transform type (HIPFFT_C2C for single-precision)
+
+            if (hipfft_rt != HIPFFT_SUCCESS)
+                throw std::runtime_error("hipfftPlan3d failed");
 
             for (int i = 0; i < dim; i++)
             {
@@ -77,25 +83,35 @@ int main(int argc, char *argv[])
                 }
                 out << "\n";
             }
-            // cudaMalloc((void **)&data, sizeof(cufftComplex) * dim * dim * dim);
-            // cudaMemcpy(data, cdata.data(), sizeof(cufftComplex) * dim * dim * dim, cudaMemcpyHostToDevice);
-            // cufftExecC2C(fftPlan, data, data, CUFFT_FORWARD);
-            // cudaMemcpy((void *)cdata.data(), data, sizeof(cufftComplex) * dim * dim * dim, cudaMemcpyDeviceToHost);
-            // cudaDeviceSynchronize();
+
+            // Execute plan
+            // hipfftExecZ2Z: double precision, hipfftExecC2C: for single-precision
+            hipfft_rt = hipfftExecC2C(plan, x, x, HIPFFT_FORWARD);
+            if (hipfft_rt != HIPFFT_SUCCESS)
+                throw std::runtime_error("hipfftExecZ2Z failed");
+
+            hip_rt = hipMemcpy((void*)cdata.data(), x, complex_bytes, hipMemcpyDeviceToHost);
+            if (hip_rt != hipSuccess)
+                throw std::runtime_error("hipMemcpy failed");
+
             out << "After hipfft\n";
-            for (int i = 0; i < dim; i++)
-            {
-                for (int j = 0; j < dim; j++)
-                {
-                    for (int k = 0; k < dim; k++)
-                    {
-                        int pos = (i * dim + j) * dim + k;
-                        out << cdata[pos].real() << " " << cdata[pos].imag() << " ";
-                    }
-                    out << "\n";
-                }
-                out << "\n";
-            }}); });
+            // for (int i = 0; i < dim; i++)
+            // {
+            //     for (int j = 0; j < dim; j++)
+            //     {
+            //         for (int k = 0; k < dim; k++)
+            //         {
+            //             int pos = (i * dim + j) * dim + k;
+            //             out << cdata[pos].real() << " " << cdata[pos].imag() << " ";
+            //         }
+            //         out << "\n";
+            //     }
+            //     out << "\n";
+            // }
+            
+            // hipfftDestroy(plan);
+            // hipFree(x); 
+    }); });
     // cufftDestroy(fftPlan);
     // cudaFree(data);}); });
 

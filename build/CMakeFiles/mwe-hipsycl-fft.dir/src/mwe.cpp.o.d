@@ -69,19 +69,12 @@ CMakeFiles/mwe-hipsycl-fft.dir/src/mwe.cpp.o: \
   /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/stl_pair.h \
   /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/move.h \
   /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/type_traits \
-  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/compare \
-  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/concepts \
   /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/stl_iterator_base_types.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/iterator_concepts.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/ptr_traits.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/ranges_cmp.h \
   /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/stl_iterator_base_funcs.h \
   /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/concept_check.h \
   /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/debug/assertions.h \
   /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/stl_iterator.h \
-  /usr/lib/llvm-14/lib/clang/14.0.6/include/cuda_wrappers/new \
-  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/new \
-  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/exception.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/ptr_traits.h \
   /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/debug/debug.h \
   /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/predefined_ops.h \
   /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/limits \
@@ -99,7 +92,8 @@ CMakeFiles/mwe-hipsycl-fft.dir/src/mwe.cpp.o: \
   /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/tr1/riemann_zeta.tcc \
   /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/cstdlib \
   /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/stdlib.h \
-  /opt/rocm/include/hip/hip_version.h \
+  /opt/rocm/hip/include/hip/hip_version.h \
+  /opt/rocm/hip/include/hip/../../../include/hip/hip_version.h \
   /usr/lib/llvm-14/lib/clang/14.0.6/include/__clang_hip_libdevice_declares.h \
   /usr/lib/llvm-14/lib/clang/14.0.6/include/__clang_hip_math.h \
   /usr/lib/llvm-14/lib/clang/14.0.6/include/cuda_wrappers/algorithm \
@@ -112,110 +106,31 @@ CMakeFiles/mwe-hipsycl-fft.dir/src/mwe.cpp.o: \
   /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/stl_heap.h \
   /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/stl_tempbuf.h \
   /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/stl_construct.h \
+  /usr/lib/llvm-14/lib/clang/14.0.6/include/cuda_wrappers/new \
+  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/new \
+  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/exception.h \
   /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/uniform_int_dist.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/ranges_algo.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/ranges_algobase.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/iterator \
-  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/iosfwd \
-  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/stringfwd.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/memoryfwd.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/postypes.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/cwchar \
-  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include/wchar.h \
-  /usr/lib/llvm-14/lib/clang/14.0.6/include/stdarg.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include/bits/wchar.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include/bits/types/wint_t.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include/bits/types/mbstate_t.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include/bits/types/__mbstate_t.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include/bits/types/__FILE.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include/bits/types/FILE.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/stream_iterator.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/streambuf_iterator.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/streambuf \
-  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/localefwd.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/x86_64-linux-gnu/c++/11/bits/c++locale.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/clocale \
-  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include/locale.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include/bits/locale.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/cctype \
-  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include/ctype.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/ios_base.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/ext/atomicity.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/x86_64-linux-gnu/c++/11/bits/gthr.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/x86_64-linux-gnu/c++/11/bits/gthr-default.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include/pthread.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include/sched.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include/bits/sched.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include/bits/cpu-set.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include/time.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include/bits/time.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include/bits/timex.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include/bits/types/struct_tm.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include/bits/types/struct_itimerspec.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include/bits/setjmp.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/x86_64-linux-gnu/c++/11/bits/atomic_word.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/locale_classes.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/string \
-  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/char_traits.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/cstdint \
-  /usr/lib/llvm-14/lib/clang/14.0.6/include/stdint.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include/stdint.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include/bits/stdint-uintn.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/pstl/glue_algorithm_defs.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/functional \
+  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/stl_function.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/backward/binders.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/tuple \
+  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/array \
+  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/range_access.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/uses_allocator.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/invoke.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/functional_hash.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/hash_bytes.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/refwrap.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/std_function.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/typeinfo \
+  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/unordered_map \
   /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/allocator.h \
   /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/x86_64-linux-gnu/c++/11/bits/c++allocator.h \
   /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/ext/new_allocator.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/ostream_insert.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/cxxabi_forced.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/stl_function.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/backward/binders.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/range_access.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/basic_string.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/memoryfwd.h \
   /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/ext/alloc_traits.h \
   /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/alloc_traits.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/string_view \
-  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/functional_hash.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/hash_bytes.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/ranges_base.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/max_size_type.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/numbers \
-  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/string_view.tcc \
-  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/ext/string_conversions.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/cstdio \
-  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include/stdio.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include/bits/libio.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include/bits/_G_config.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include/bits/stdio_lim.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include/bits/sys_errlist.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/cerrno \
-  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include/errno.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include/bits/errno.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include/linux/errno.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include/asm/errno.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include/asm-generic/errno.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include/asm-generic/errno-base.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/charconv.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/basic_string.tcc \
-  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/locale_classes.tcc \
-  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/system_error \
-  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/x86_64-linux-gnu/c++/11/bits/error_constants.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/stdexcept \
-  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/exception \
-  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/exception_ptr.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/cxxabi_init_exception.h \
-  /usr/lib/llvm-14/lib/clang/14.0.6/include/__stddef_max_align_t.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/typeinfo \
-  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/nested_exception.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/streambuf.tcc \
-  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/invoke.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/ranges_util.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/pstl/glue_algorithm_defs.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/functional \
-  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/tuple \
-  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/array \
-  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/uses_allocator.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/refwrap.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/std_function.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/unordered_map \
   /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/ext/aligned_buffer.h \
   /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/hashtable.h \
   /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/hashtable_policy.h \
@@ -236,20 +151,95 @@ CMakeFiles/mwe-hipsycl-fft.dir/src/mwe.cpp.o: \
   /usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include/bits/posix2_lim.h \
   /usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include/bits/xopen_lim.h \
   /usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include/bits/uio_lim.h \
+  /usr/lib/llvm-14/lib/clang/14.0.6/include/stdint.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include/stdint.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include/bits/wchar.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include/bits/stdint-uintn.h \
   /usr/lib/llvm-14/lib/clang/14.0.6/include/__clang_cuda_math_forward_declares.h \
   /usr/lib/llvm-14/lib/clang/14.0.6/include/__clang_hip_cmath.h \
   /usr/lib/llvm-14/lib/clang/14.0.6/include/__clang_cuda_complex_builtins.h \
   /opt/hipSYCL/bin/../include/hipSYCL/std/hiplike/complex \
   /usr/lib/llvm-14/lib/clang/14.0.6/include/cuda_wrappers/complex \
+  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/stdexcept \
+  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/exception \
+  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/exception_ptr.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/cxxabi_init_exception.h \
+  /usr/lib/llvm-14/lib/clang/14.0.6/include/__stddef_max_align_t.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/nested_exception.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/string \
+  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/stringfwd.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/char_traits.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/postypes.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/cwchar \
+  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include/wchar.h \
+  /usr/lib/llvm-14/lib/clang/14.0.6/include/stdarg.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include/bits/types/wint_t.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include/bits/types/mbstate_t.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include/bits/types/__mbstate_t.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include/bits/types/__FILE.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include/bits/types/FILE.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/cstdint \
+  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/localefwd.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/x86_64-linux-gnu/c++/11/bits/c++locale.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/clocale \
+  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include/locale.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include/bits/locale.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/iosfwd \
+  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/cctype \
+  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include/ctype.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/ostream_insert.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/cxxabi_forced.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/basic_string.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/ext/atomicity.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/x86_64-linux-gnu/c++/11/bits/gthr.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/x86_64-linux-gnu/c++/11/bits/gthr-default.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include/pthread.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include/sched.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include/bits/sched.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include/bits/cpu-set.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include/time.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include/bits/time.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include/bits/timex.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include/bits/types/struct_tm.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include/bits/types/struct_itimerspec.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include/bits/setjmp.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/x86_64-linux-gnu/c++/11/bits/atomic_word.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/string_view \
+  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/ranges_base.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/string_view.tcc \
+  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/ext/string_conversions.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/cstdio \
+  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include/stdio.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include/bits/libio.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include/bits/_G_config.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include/bits/stdio_lim.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include/bits/sys_errlist.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/cerrno \
+  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include/errno.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include/bits/errno.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include/linux/errno.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include/asm/errno.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include/asm-generic/errno.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include/asm-generic/errno-base.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/charconv.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/basic_string.tcc \
   /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/sstream \
   /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/istream \
   /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/ios \
+  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/ios_base.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/locale_classes.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/locale_classes.tcc \
+  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/system_error \
+  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/x86_64-linux-gnu/c++/11/bits/error_constants.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/streambuf \
+  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/streambuf.tcc \
   /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/basic_ios.h \
   /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/locale_facets.h \
   /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/cwctype \
   /usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include/wctype.h \
   /usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include/bits/wctype-wchar.h \
   /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/x86_64-linux-gnu/c++/11/bits/ctype_base.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/streambuf_iterator.h \
   /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/x86_64-linux-gnu/c++/11/bits/ctype_inline.h \
   /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/locale_facets.tcc \
   /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/basic_ios.tcc \
@@ -273,23 +263,7 @@ CMakeFiles/mwe-hipsycl-fft.dir/src/mwe.cpp.o: \
   /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/shared_ptr_atomic.h \
   /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/atomic_base.h \
   /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/atomic_lockfree_defines.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/atomic_wait.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/climits \
-  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include/unistd.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include/bits/posix_opt.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include/bits/environments.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include/bits/confname.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include/bits/getopt_posix.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include/bits/getopt_core.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include/syscall.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include/sys/syscall.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include/asm/unistd.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include/asm/unistd_64.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include/bits/syscall.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/std_mutex.h \
   /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/backward/auto_ptr.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/ranges_uninitialized.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/uses_allocator_args.h \
   /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/pstl/glue_memory_defs.h \
   /opt/hipSYCL/bin/../include/hipSYCL/runtime/application.hpp \
   /opt/hipSYCL/bin/../include/hipSYCL/runtime/backend.hpp \
@@ -305,53 +279,71 @@ CMakeFiles/mwe-hipsycl-fft.dir/src/mwe.cpp.o: \
   /opt/hipSYCL/bin/../include/SYCL/../hipSYCL/sycl/libkernel/backend.hpp \
   /opt/hipSYCL/bin/../include/SYCL/../hipSYCL/sycl/libkernel/cuda/cuda_backend.hpp \
   /opt/hipSYCL/bin/../include/SYCL/../hipSYCL/sycl/libkernel/hip/hip_backend.hpp \
-  /opt/rocm/include/hip/hip_runtime.h \
+  /opt/rocm/hip/include/hip/hip_runtime.h \
+  /opt/rocm/hip/include/hip/../../../include/hip/hip_runtime.h \
   /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/thread \
-  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/stop_token \
-  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/atomic \
   /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/std_thread.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/semaphore \
-  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/semaphore_base.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/atomic_timed_wait.h \
   /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/this_thread_sleep.h \
   /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/chrono \
   /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/ratio \
   /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/ctime \
   /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/parse_numbers.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include/sys/time.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include/semaphore.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include/bits/semaphore.h \
-  /opt/rocm/include/hip/hip_common.h \
-  /opt/rocm/include/hip/amd_detail/amd_hip_runtime.h \
-  /opt/rocm/include/hip/amd_detail/amd_hip_common.h \
-  /opt/rocm/include/hip/hip_runtime_api.h \
+  /opt/rocm/hip/include/hip/hip_common.h \
+  /opt/rocm/hip/include/hip/../../../include/hip/hip_common.h \
+  /opt/rocm/hip/include/hip/amd_detail/amd_hip_runtime.h \
+  /opt/rocm/hip/include/hip/amd_detail/../../../../include/hip/amd_detail/amd_hip_runtime.h \
+  /opt/rocm/hip/include/hip/amd_detail/amd_hip_common.h \
+  /opt/rocm/hip/include/hip/amd_detail/../../../../include/hip/amd_detail/amd_hip_common.h \
+  /opt/rocm/hip/include/hip/hip_runtime_api.h \
+  /opt/rocm/hip/include/hip/../../../include/hip/hip_runtime_api.h \
   /usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include/string.h \
   /usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include/strings.h \
-  /opt/rocm/include/hip/amd_detail/host_defines.h \
-  /opt/rocm/include/hip/driver_types.h \
-  /opt/rocm/include/hip/texture_types.h \
-  /opt/rocm/include/hip/channel_descriptor.h \
-  /opt/rocm/include/hip/amd_detail/amd_channel_descriptor.h \
-  /opt/rocm/include/hip/amd_detail/amd_hip_vector_types.h \
-  /opt/rocm/include/hip/surface_types.h \
-  /opt/rocm/include/hip/amd_detail/amd_hip_runtime_pt_api.h \
-  /opt/rocm/include/hip/amd_detail/hip_ldg.h \
-  /opt/rocm/include/hip/amd_detail/amd_hip_atomic.h \
-  /opt/rocm/include/hip/amd_detail/amd_device_functions.h \
-  /opt/rocm/include/hip/amd_detail/math_fwd.h \
-  /opt/rocm/include/hip/hip_vector_types.h \
-  /opt/rocm/include/hip/amd_detail/device_library_decls.h \
-  /opt/rocm/include/hip/amd_detail/llvm_intrinsics.h \
-  /opt/rocm/include/hip/amd_detail/amd_warp_functions.h \
-  /opt/rocm/include/hip/amd_detail/amd_hip_unsafe_atomics.h \
-  /opt/rocm/include/hip/amd_detail/amd_surface_functions.h \
-  /opt/rocm/include/hip/amd_detail/ockl_image.h \
-  /opt/rocm/include/hip/amd_detail/texture_fetch_functions.h \
-  /opt/rocm/include/hip/hip_texture_types.h \
-  /opt/rocm/include/hip/amd_detail/texture_indirect_functions.h \
-  /opt/rocm/include/hip/amd_detail/amd_math_functions.h \
-  /opt/rocm/include/hip/amd_detail/hip_fp16_math_fwd.h \
-  /opt/rocm/include/hip/library_types.h \
+  /opt/rocm/hip/include/hip/amd_detail/host_defines.h \
+  /opt/rocm/hip/include/hip/amd_detail/../../../../include/hip/amd_detail/host_defines.h \
+  /opt/rocm/hip/include/hip/driver_types.h \
+  /opt/rocm/hip/include/hip/../../../include/hip/driver_types.h \
+  /opt/rocm/hip/include/hip/texture_types.h \
+  /opt/rocm/hip/include/hip/../../../include/hip/texture_types.h \
+  /opt/rocm/hip/include/hip/channel_descriptor.h \
+  /opt/rocm/hip/include/hip/../../../include/hip/channel_descriptor.h \
+  /opt/rocm/hip/include/hip/amd_detail/amd_channel_descriptor.h \
+  /opt/rocm/hip/include/hip/amd_detail/../../../../include/hip/amd_detail/amd_channel_descriptor.h \
+  /opt/rocm/hip/include/hip/amd_detail/amd_hip_vector_types.h \
+  /opt/rocm/hip/include/hip/amd_detail/../../../../include/hip/amd_detail/amd_hip_vector_types.h \
+  /opt/rocm/hip/include/hip/surface_types.h \
+  /opt/rocm/hip/include/hip/../../../include/hip/surface_types.h \
+  /opt/rocm/hip/include/hip/amd_detail/amd_hip_runtime_pt_api.h \
+  /opt/rocm/hip/include/hip/amd_detail/../../../../include/hip/amd_detail/amd_hip_runtime_pt_api.h \
+  /opt/rocm/hip/include/hip/amd_detail/hip_ldg.h \
+  /opt/rocm/hip/include/hip/amd_detail/../../../../include/hip/amd_detail/hip_ldg.h \
+  /opt/rocm/hip/include/hip/amd_detail/amd_hip_atomic.h \
+  /opt/rocm/hip/include/hip/amd_detail/../../../../include/hip/amd_detail/amd_hip_atomic.h \
+  /opt/rocm/hip/include/hip/amd_detail/../../../../include/hip/amd_detail/amd_device_functions.h \
+  /opt/rocm/hip/include/hip/amd_detail/../../../../include/hip/amd_detail/math_fwd.h \
+  /opt/rocm/hip/include/hip/hip_vector_types.h \
+  /opt/rocm/hip/include/hip/../../../include/hip/hip_vector_types.h \
+  /opt/rocm/hip/include/hip/amd_detail/device_library_decls.h \
+  /opt/rocm/hip/include/hip/amd_detail/../../../../include/hip/amd_detail/device_library_decls.h \
+  /opt/rocm/hip/include/hip/amd_detail/llvm_intrinsics.h \
+  /opt/rocm/hip/include/hip/amd_detail/../../../../include/hip/amd_detail/llvm_intrinsics.h \
+  /opt/rocm/hip/include/hip/amd_detail/../../../../include/hip/amd_detail/amd_warp_functions.h \
+  /opt/rocm/hip/include/hip/amd_detail/../../../../include/hip/amd_detail/amd_hip_unsafe_atomics.h \
+  /opt/rocm/hip/include/hip/amd_detail/amd_device_functions.h \
+  /opt/rocm/hip/include/hip/amd_detail/amd_surface_functions.h \
+  /opt/rocm/hip/include/hip/amd_detail/../../../../include/hip/amd_detail/amd_surface_functions.h \
+  /opt/rocm/hip/include/hip/amd_detail/ockl_image.h \
+  /opt/rocm/hip/include/hip/amd_detail/../../../../include/hip/amd_detail/ockl_image.h \
+  /opt/rocm/hip/include/hip/amd_detail/texture_fetch_functions.h \
+  /opt/rocm/hip/include/hip/amd_detail/../../../../include/hip/amd_detail/texture_fetch_functions.h \
+  /opt/rocm/hip/include/hip/hip_texture_types.h \
+  /opt/rocm/hip/include/hip/../../../include/hip/hip_texture_types.h \
+  /opt/rocm/hip/include/hip/amd_detail/texture_indirect_functions.h \
+  /opt/rocm/hip/include/hip/amd_detail/../../../../include/hip/amd_detail/texture_indirect_functions.h \
+  /opt/rocm/hip/include/hip/amd_detail/amd_math_functions.h \
+  /opt/rocm/hip/include/hip/amd_detail/../../../../include/hip/amd_detail/amd_math_functions.h \
+  /opt/rocm/hip/include/hip/amd_detail/../../../../include/hip/amd_detail/hip_fp16_math_fwd.h \
+  /opt/rocm/hip/include/hip/library_types.h \
+  /opt/rocm/hip/include/hip/../../../include/hip/library_types.h \
   /opt/hipSYCL/bin/../include/SYCL/../hipSYCL/sycl/libkernel/spirv/spirv_backend.hpp \
   /opt/hipSYCL/bin/../include/SYCL/../hipSYCL/sycl/libkernel/host/host_backend.hpp \
   /opt/hipSYCL/bin/../include/SYCL/../hipSYCL/sycl/libkernel/range.hpp \
@@ -365,6 +357,8 @@ CMakeFiles/mwe-hipsycl-fft.dir/src/mwe.cpp.o: \
   /opt/hipSYCL/bin/../include/hipSYCL/glue/embedded_pointer.hpp \
   /opt/hipSYCL/bin/../include/hipSYCL/sycl/libkernel/host/host_backend.hpp \
   /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/cstring \
+  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/iterator \
+  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/stream_iterator.h \
   /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/random \
   /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/random.h \
   /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/x86_64-linux-gnu/c++/11/bits/opt_random.h \
@@ -376,6 +370,7 @@ CMakeFiles/mwe-hipsycl-fft.dir/src/mwe.cpp.o: \
   /opt/hipSYCL/bin/../include/hipSYCL/runtime/error.hpp \
   /opt/hipSYCL/bin/../include/hipSYCL/runtime/async_errors.hpp \
   /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/mutex \
+  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/std_mutex.h \
   /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/unique_lock.h \
   /opt/hipSYCL/bin/../include/hipSYCL/sycl/exception.hpp \
   /opt/hipSYCL/bin/../include/SYCL/../hipSYCL/sycl/types.hpp \
@@ -389,6 +384,7 @@ CMakeFiles/mwe-hipsycl-fft.dir/src/mwe.cpp.o: \
   /opt/hipSYCL/bin/../include/hipSYCL/sycl/access.hpp \
   /opt/hipSYCL/bin/../include/hipSYCL/runtime/data.hpp \
   /opt/hipSYCL/bin/../include/hipSYCL/runtime/dag_node.hpp \
+  /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/atomic \
   /opt/hipSYCL/bin/../include/hipSYCL/runtime/event.hpp \
   /opt/hipSYCL/bin/../include/hipSYCL/runtime/allocator.hpp \
   /opt/hipSYCL/bin/../include/hipSYCL/runtime/instrumentation.hpp \
@@ -595,9 +591,11 @@ CMakeFiles/mwe-hipsycl-fft.dir/src/mwe.cpp.o: \
   /opt/hipSYCL/bin/../include/SYCL/../hipSYCL/sycl/interop_handle.hpp \
   /opt/hipSYCL/bin/../include/SYCL/../hipSYCL/sycl/buffer_explicit_behavior.hpp \
   /opt/hipSYCL/bin/../include/hipSYCL/sycl/info/queue.hpp \
-  /opt/rocm/include/hipfft.h /opt/rocm/include/hipfft/hipfft.h \
+  /opt/rocm/include/hipfft/hipfft.h \
   /opt/rocm/include/hipfft/hipfft-export.h \
   /opt/rocm/include/hipfft/hipfft-version.h \
-  /opt/rocm/include/hip/hip_complex.h \
-  /opt/rocm/include/hip/amd_detail/amd_hip_complex.h \
+  /opt/rocm/hip/include/hip/hip_complex.h \
+  /opt/rocm/hip/include/hip/../../../include/hip/hip_complex.h \
+  /opt/rocm/hip/include/hip/amd_detail/amd_hip_complex.h \
+  /opt/rocm/hip/include/hip/amd_detail/../../../../include/hip/amd_detail/amd_hip_complex.h \
   /usr/lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/math.h
