@@ -95,22 +95,22 @@ int main(int argc, char *argv[])
                 throw std::runtime_error("hipMemcpy failed");
 
             out << "After hipfft\n";
-            // for (int i = 0; i < dim; i++)
-            // {
-            //     for (int j = 0; j < dim; j++)
-            //     {
-            //         for (int k = 0; k < dim; k++)
-            //         {
-            //             int pos = (i * dim + j) * dim + k;
-            //             out << cdata[pos].real() << " " << cdata[pos].imag() << " ";
-            //         }
-            //         out << "\n";
-            //     }
-            //     out << "\n";
-            // }
+            for (int i = 0; i < dim; i++)
+            {
+                for (int j = 0; j < dim; j++)
+                {
+                    for (int k = 0; k < dim; k++)
+                    {
+                        int pos = (i * dim + j) * dim + k;
+                        out << cdata[pos].real() << " " << cdata[pos].imag() << " ";
+                    }
+                    out << "\n";
+                }
+                out << "\n";
+            }
             
-            // hipfftDestroy(plan);
-            // hipFree(x); 
+            hipfftDestroy(plan);
+            hipFree(x); 
     }); });
     // cufftDestroy(fftPlan);
     // cudaFree(data);}); });
