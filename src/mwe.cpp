@@ -1,5 +1,5 @@
 #include <SYCL/sycl.hpp>
-#include <hipfft/hipfft.h>
+#include <hipfft.h>
 #include <iostream>
 #include <math.h>
 #include <complex>

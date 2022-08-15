@@ -35,8 +35,10 @@ endif()
 
 message(STATUS "${CMAKE_CUDA_COMPILER_ID} ${CMAKE_CUDA_COMPILER_VERSION}")
 
+find_package(CUDAToolkit REQUIRED)
 
-include_directories( /opt/rocm/opencl/include/ /opt/rocm/hip/include /opt/rocm/rocfft/include /usr/include/mpich /opt/rocm/opencl/include/ /usr/local/cuda/include /opt/rocm/llvm/bin)
+
+include_directories( /opt/rocm/opencl/include/ /opt/rocm/hip/include /opt/rocm/hipfft/include /opt/rocm/rocfft/include /usr/include/mpich /opt/rocm/opencl/include/ /usr/local/cuda/include /opt/rocm/llvm/bin)
 link_directories( /opt/rocm/hip/include /usr/lib/x86_64-linux-gnu /opt/rocm/lib /usr/local/cuda/lib64/ /opt/rocm/llvm/bin)
 
 add_executable(mwe-hipsycl-fft ${MY_SOURCE_FILES})
@@ -44,6 +46,6 @@ add_executable(mwe-hipsycl-fft ${MY_SOURCE_FILES})
 # set_target_properties(mwe-hipsycl-fft PROPERTIES
 #                             CUDA_SEPARABLE_COMPILATION ON)
 
-target_link_libraries(mwe-hipsycl-fft PUBLIC clFFT rocfft hipfft)
+target_link_libraries(mwe-hipsycl-fft PUBLIC clFFT hipfft CUDA::cudart CUDA::cufft)
 # target_include_directories(mwe-hipsycl-fft PUBLIC CUDA::cufft)
 add_sycl_to_target(TARGET mwe-hipsycl-fft)
