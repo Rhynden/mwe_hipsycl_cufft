@@ -80,7 +80,7 @@ int main(int argc, char *argv[])
             cudaMemcpy(data, cdata.data(), sizeof(cufftComplex) * dim * dim * dim, cudaMemcpyHostToDevice);
             cufftExecC2C(fftPlan, data, data, CUFFT_FORWARD);
             cudaMemcpy((void *)cdata.data(), data, sizeof(cufftComplex) * dim * dim * dim, cudaMemcpyDeviceToHost);
-            cudaDeviceSynchronize();
+            // cudaDeviceSynchronize();
             out << "After cufft\n";
             for (int i = 0; i < dim; i++)
             {
